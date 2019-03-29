@@ -1,12 +1,8 @@
-function input(prompt::AbstractString="")
+function input(prompt::Float64="")
     print(prompt)
     return chomp(readline())
 end
 
-Px = input("Enter x-coordinate of target: ");
-Py = input("Enter y-coordinate of target: ");
-P,Px, Py = 
-P::Number = "Px" + "Py"
-
-Px
-Py
+Px= input("Enter x-coordinate of target: ")::Int64;
+Py= input("Enter y-coordinate of target: ")::Int64;
+println("$Px + $Py = $(Px+Py)")
