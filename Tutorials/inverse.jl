@@ -1,10 +1,12 @@
 l1 = 200;
 l2 = 150;
-Px = 0;
+Px = 100;
 Py = 200;
 C2 = (Px^2 + Py^2 - l1^2 - l2^2)/(2*l1*l2);
 S2 = sqrt(1-C2^2);
-t2 = atan(S2,C2)
-S1 = (Px(l1+l2*C2)-(Py*l2*S2))/(Px^2+Py^2);
+S1 = ((Px*(l1+(l2*C2)))-(Py*l2*S2))/(Px^2+Py^2);
 C1 = sqrt(1-S1^2);
-t1 = atan(S1,C1)
+t22 = atand(S2,C2)
+t11 = atand(S1,C1)
+t12 = atand(S1,C1)
+t21 = atand(-S2,C2)
