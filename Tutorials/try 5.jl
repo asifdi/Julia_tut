@@ -1,9 +1,8 @@
 using Dates
-println()
-print("enter year   "); y = (readline(stdin));
-print("enter month  "); m = (readline(stdin));
-print("enter day    "); d = (readline(stdin));
 
-date = ("y", "m", "d")
+print("enter year   "); year = parse(Int64, readline())
+print("enter month  "); month = parse(Int64, readline())
+print("enter day    "); day = parse(Int64, readline())
+date = Date(year,month,day);
 
 println(date)
