@@ -44,4 +44,3 @@ x = ((l1 * sind(t1)) + (l2 * sind(t1 + t2)));
 y = ((l1 * cosd(t1)) + (l2 * cosd(t1 + t2)));
 println("Goal position =  $x, $y")
 
-println("Time taken for computation = "); @time(all)
