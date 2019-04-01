@@ -34,7 +34,7 @@ end
 
 print("Enter Joint 2 angle in degrees = "); t2 = parse(Float64, readline())
 while !(-90.00 < t2 < 90.00)
-    global t1
+    global t2
     println("second angle out of range [-90 , 90]")
     print("Enter Joint 2 angle in degrees = "); t1 = parse(Float64, readline())
 end
@@ -43,3 +43,5 @@ end
 x = ((l1 * sind(t1)) + (l2 * sind(t1 + t2)));
 y = ((l1 * cosd(t1)) + (l2 * cosd(t1 + t2)));
 println("Goal position =  $x, $y")
+
+println("Time taken for computation = "); @time(all)
