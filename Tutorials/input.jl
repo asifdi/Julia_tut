@@ -1,5 +1,4 @@
 # Forward kinematics for 2 DOF
-global l1, l2
 print("Enter first link length in mm = "); l1 = parse(Float64,readline())
 while l1 <= 0
     global l1
@@ -24,7 +23,6 @@ global l2
     end
 end
 
-global t1, t2
 print("Enter Joint 1 angle in degrees = "); t1 = parse(Float64, readline())
 while !(-90.00 < t1 < 90.00)
     global t1
