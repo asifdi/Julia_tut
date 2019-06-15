@@ -12,4 +12,4 @@ for i in range(1,length=length(θ1))
     end
 end
 
-plot(Px, Py, seriestype=:scatter, markersize=1, legendfont = 0)
+plot(Px, Py, seriestype=:scatter, markersize=1, legendfont = 1)
