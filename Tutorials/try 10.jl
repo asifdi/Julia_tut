@@ -8,5 +8,5 @@ x[:,1] = steady
 @inbounds for i=2:numAttract
     @. x[:,i] = r*x[:,i-1]*(1-x[:,i-1])
 end
-using Plots; gr(fmt=:png)
+using Plots; GR(fmt=:png)
 plot(collect(r),x,seriestype=:scatter,markersize=.002,legend=false,color=:black)
