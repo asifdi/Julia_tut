@@ -1,6 +1,6 @@
 #generic inverse kinematic soltion for 2 dof
 
-global l1, l2, Px, Py
+#global l1, l2, Px, Py
 print("Enter first link length in mm = "); l1 = parse(Float64, readline())
 while l1 <= 0
     global l1
