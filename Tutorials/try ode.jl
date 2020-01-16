@@ -1,3 +1,6 @@
+'''This code is obselete, many of the packages have stopped its support or
+changed the code once the stable release of julia came in'''
+
 using Flux, DiffEqFlux, DifferentialEquations, Plots
 
 
