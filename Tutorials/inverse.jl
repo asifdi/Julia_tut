@@ -1,13 +1,15 @@
 #generic inverse kinematic soltion for 2 dof
 
-#global l1, l2, Px, Py
+global l1, l2, Px, Py
 print("Enter first link length in mm = "); l1 = parse(Float64, readline())
+print(l1)
 while l1 <= 0
     global l1
     if l1 < 0
         println("Length cannot be negative")
         print("Enter first link length in mm = "); l1 = parse(Float64, readline())
-    else l1 == 0
+    else
+        l1 == 0
         println("Length cannot be zero")
         print("Enter first link length in mm = "); l1 = parse(Float64, readline())
     end
@@ -19,7 +21,8 @@ while l2 <= 0
     if l2 < 0
         println("Length cannot be negative")
         print("Enter second link length in mm = "); l2 = parse(Float64, readline())
-    else l2 == 0
+    else
+        l2 == 0
         println("Length cannot be zero")
         print("Enter second link length in mm = "); l2 = parse(Float64, readline())
     end
@@ -39,10 +42,10 @@ while !(0 <= Py <= (l1 + l2))
     print("Enter goal position y-coordinate in mm = "); Py = parse(Float64, readline())
 end
 # inverse kinematic sine and cosine calculations
-C2 = (Px^2 + Py^2 - l1^2 - l2^2) / (2 * l1 * l2);
-S2 = sqrt(1 - C2^2);
-S1 = ((Px * (l1 + (l2 * C2))) - (Py * l2 * S2)) / (Px^2 + Py^2);
-C1 = sqrt(1 - S1^2);
+C2 = (Px^2 + Py^2 - l1^2 - l2^2) / (2 * l1 * l2)
+S2 = sqrt(1 - C2^2)
+S1 = ((Px * (l1 + (l2 * C2))) - (Py * l2 * S2)) / (Px^2 + Py^2)
+C1 = sqrt(1 - S1^2)
 #first solution joint angle calculations
 t11 = atand(S1, C1)
 t21 = atand(S2, C2)

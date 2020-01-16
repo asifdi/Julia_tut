@@ -1,4 +1,4 @@
-using Images, TestImages, Colors
+using Images, TestImages, Colors, FileIO
 methods(testimage)
 img = testimage("lighthouse")
 summary(img)
@@ -16,4 +16,13 @@ c = img_bgr[10];
 println(c.r, " ", c.g, " ", c.b);
 println(red(c), " ", green(c), " ", blue(c));
 
-img = load("skylne.jpg")
+img = testimage("mandrill")
+
+img = testimage("lighthouse")
+println(size(img))
+summary(img)
+
+#tiled_img = Array{RGB{N0f8},2}(size(img))
+
+tiled_img = similar(img)
+?linspace
