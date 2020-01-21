@@ -6,7 +6,7 @@ img = testimage("mandrill")
 
 using FileIO
 
-#img = load("mandrill.png")
+img = load("C:/Users/asifd/Pictures/Screenshot.png")
 
 using TestImages, ImageView, Images
 
