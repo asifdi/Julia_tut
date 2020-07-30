@@ -1,6 +1,7 @@
+using Random
 n = 100
 f(x) = x^2
-x = randn(n)
+x = randn(n, Int64)
 using Plots
 plot(f.(x), label = "x^2")
 plot!(x, label="x")

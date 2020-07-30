@@ -47,5 +47,5 @@ end
 
 k = collect(1:(70+41)*(90+81));
 plot(k,tt2)
-xlabel('Time t')
-ylabel('Torque T_2')
+#xlabel('Time_t')
+#ylabel('Torque T_2')

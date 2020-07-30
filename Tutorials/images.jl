@@ -25,4 +25,4 @@ summary(img)
 
 #tiled_img = Array{RGB{N0f8}, 2}(size(512, 768))
 #linspace(1, size(img, 1), 8)
-''' codes are obselte, exploring new codes'''
+#codes are obselte, exploring new codes

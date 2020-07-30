@@ -1,4 +1,4 @@
-'''This file contains the tutorails given in https://juliaimages.org/latest/quickstart/ 
+#This file contains the tutorails given in https://juliaimages.org/latest/quickstart/ 
 
 using TestImages, Images
 img = testimage("lighthouse")
