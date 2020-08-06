@@ -1,7 +1,7 @@
 using Random
 n = 100
 f(x) = x^2
-x = randn(n, Int64)
+x = rand(n)
 using Plots
 plot(f.(x), label = "x^2")
 plot!(x, label="x")
@@ -11,4 +11,3 @@ for i = 1:10
     global y
     y += i
 end
-y
