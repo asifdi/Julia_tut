@@ -6,11 +6,11 @@ using TestImages
 
 img = testimage("mandrill")
 
-using FileIO
+using FileIO, ImageIO
 
 img = load("C:/Users/asifd/Pictures/Screenshot.png")
 
-using TestImages, ImageView, Images
+using TestImages, ImageView, Images, ImageMagick
 
 img = testimage("mandrill")
 
