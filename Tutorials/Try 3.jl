@@ -1,7 +1,7 @@
 println("Hello")
 
 
-if true
+if True
     println("true")
 else
     println("false")
