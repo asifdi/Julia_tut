@@ -1,8 +1,9 @@
 println("Hello")
 
 
-if True
+if true == 1
     println("true")
 else
     println("false")
 end
+
