@@ -1,4 +1,5 @@
 using Images, TestImages, Colors
+using ImageIO, ImageMagick
 methods(testimage)
 img = testimage("lighthouse")
 summary(img)
@@ -18,7 +19,7 @@ c = img_bgr[10];
 println(c.r, " ", c.g, " ", c.b)
 println(red(c), " ", green(c), " ", blue(c))
 
-#img = load("skyline.jpg")
+img = load("C:\\users\\asifd\\Pictures\\lighthouse.jpg")
 
 println(size(img))
 summary(img)
