@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"julia.executablePath": "C:\\\\Users\\\\asifd\\\\AppData\\\\Local\\\\Programs\\\\Julia\\\\Julia-1.4.2\\\\bin\\\\julia.exe",
+		"julia.execution.codeInREPL": true
+	}
+}
