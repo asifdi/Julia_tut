@@ -44,11 +44,11 @@ S2 = sqrt(1 - C2^2);
 S1 = ((Px * (l1 + (l2 * C2))) - (Py * l2 * S2)) / (Px^2 + Py^2);
 C1 = sqrt(1 - S1^2);
 #first solution joint angle calculations
-t11 = atand(S1, C1)
-t21 = atand(S2, C2)
+t11 = round(atand(S1, C1), digits=3)
+t21 = round(atand(S2, C2), digits=3)
 #second solution joint angle calculations
-t12 = atand(S1, -C1)
-t22 = atand(-S2, C2)
+t12 = round(atand(S1, -C1), digits=3)
+t22 = round(atand(-S2, C2), digits=3)
 
 println("solution 1 angles: $t11, $t21")
 println("solution 2 angles: $t12, $t22")
