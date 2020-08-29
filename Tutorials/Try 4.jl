@@ -1,8 +1,8 @@
 using Plots
 plot(rand(5,5))
 
-if true == 1
-    Println("true")
+if true
+    println("true")
 else
-    Println("false")
+    println("false")
 end

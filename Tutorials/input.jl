@@ -38,7 +38,7 @@ while !(-90.00 < t2 < 90.00)
 end
 
 # Forward kinematic calculations
-x = ((l1 * sind(t1)) + (l2 * sind(t1 + t2)));
-y = ((l1 * cosd(t1)) + (l2 * cosd(t1 + t2)));
+x = round(((l1 * sind(t1)) + (l2 * sind(t1 + t2))), digits=3);
+y = round(((l1 * cosd(t1)) + (l2 * cosd(t1 + t2))), digits=3);
 println("Goal position =  $x, $y")
 
