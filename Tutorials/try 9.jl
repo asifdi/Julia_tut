@@ -1,4 +1,5 @@
-using Plots; gr(); Random
+using Plots; gr();
+using Random
 alphas = [0.0, 0.5, 0.98]
 T = 200
 
