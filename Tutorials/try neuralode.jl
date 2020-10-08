@@ -16,8 +16,8 @@ ode_data = Array(solve(prob,Tsit5(),saveat=t))
 dudt = Chain(x -> x.^3,
             Dense(2,50,tanh),
             Dense(50,2))
+n_ode = NeuralODE(dudt,tspan,Tsit5(),saveat=t,reltol=1e-7,abstol=1e-9)
 ps = Flux.params(dudt)
-n_ode = x->neural_ode(dudt,x,tspan,Tsit5(),saveat=t,reltol=1e-7,abstol=1e-9)
 
 pred = n_ode(u0) #Get the prediction using the correct initial condition
 scatter(t,ode_data[1,:],label="data")
@@ -33,7 +33,7 @@ opt = ADAM(0.1)
 cb = function () #callback fuction to observe training
     display(loss_n_ode())
     #plot current prediction against data
-    cur_pred = Flux.data(predict_n_ode())
+    cur_pred = predict_n_ode()
     pl = scatter(t,ode_data[1,:],label = "data")
     scatter!(pl,t,cur_pred[1,:],label="prediction")
     display(plot(pl))
