@@ -2,7 +2,7 @@
 
 #prompting user to input number of terms
 print("How many fibinocci terms have to be printed? \n")
-nterms = parse(Int64,readline());
+nterms = parse(Int64, readline());
 
 #first two terms
 n1= 0
